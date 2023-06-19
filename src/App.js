@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './home';
+import Login from './Login';
+import Signup from './Signup';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PrivateRoute from './privateRoute/auth';
+
 
 function App() {
+  const userEmail = localStorage.getItem("email");
+  if(!userEmail)
+  {
+    console.log("user not loggedIn");
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+            <Route exact path="/home" element={
+            <PrivateRoute>
+            <Home />
+            </PrivateRoute>
+            }>
+            </Route> 
+            <Route exact path="/" element={<Login />}></Route> 
+            <Route exact path="/signup" element={<Signup />}></Route> 
+            <Route exact path="/login" element={<Login />}></Route> 
+        </Routes>
+      </Router>
     </div>
   );
 }
