@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from 'react';
 import './home.css';
+import './logoutbtn.css';
 import FilerobotImageEditor, {
   TABS,
   TOOLS,
@@ -21,7 +22,8 @@ export default function Home() {
   return (
     <div class="demo">
       {/* <button onClick={openImgEditor}>Open Filerobot image editor</button> */}
-      {/* <button type="button" onClick={logOut}>Log out</button> */}
+      <button class="logoutbtn" type="button" onClick={logOut}>logout</button>
+      {/* <button style={{float:'right'}} type="button" onClick={logOut}>Log out</button> */}
         <FilerobotImageEditor
           source="https://png.pngtree.com/element_our/20200610/ourlarge/pngtree-black-paper-plane-border-image_2244062.jpg"
           onSave={(editedImageObject, designState) =>
