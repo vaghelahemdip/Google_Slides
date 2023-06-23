@@ -133,7 +133,7 @@ export default function Signup()
         <form>
         <input 
         type="text"
-        placeholder="First Name"
+        placeholder="Enter First Name"
         value={firstName}
           onChange={(e) => {
             setfirstName(e.target.value);
@@ -142,7 +142,7 @@ export default function Signup()
         </input><br></br>
         <input 
         type="text" 
-        placeholder="Last Name"
+        placeholder="Enter Last Name"
         value={lastName}
           onChange={(e) => {
             setlastName(e.target.value);
@@ -150,7 +150,7 @@ export default function Signup()
           </input><br></br>
         <input 
         type="text" 
-        placeholder="Phone Number"
+        placeholder="Enter Phone Number"
         value={phoneNumber}
           onChange={(e) => {
             setphoneNumber(e.target.value);
@@ -158,7 +158,7 @@ export default function Signup()
           </input><br></br>
         <input 
         type="text" 
-        placeholder="Email"
+        placeholder="Enter Email"
         value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -166,7 +166,7 @@ export default function Signup()
           </input><br></br>
         <input 
         type="password" 
-        placeholder="Password"
+        placeholder="Enter Password"
         value={password}
           onChange={(e) => {
             setPassword(e.target.value);

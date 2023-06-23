@@ -4,6 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 import {useFormik} from 'formik';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
 
 
 export default function Login() {
@@ -14,7 +15,12 @@ export default function Login() {
   const [passwordErrorMessage, updatePasswordError] = useState('');
   const errors = {};
   
-
+  // React.useEffect(() => {
+  //   axios.get('http://localhost:8000/list').then((response) => {
+  //     console.log(response.data);
+  //   });
+  // }, []);
+  
 
   function validateForm() {
     if (email.length === 0) {
@@ -31,7 +37,7 @@ export default function Login() {
 
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
-    if(email == "admin@scirendering.com" && password == "scirendering")
+    if(email == "admin@scirendering.com" && password == "Sciren1!@")
     {
       navigate("/home");
     }

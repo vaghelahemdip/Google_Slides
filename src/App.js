@@ -12,7 +12,7 @@ function App() {
   if(!userEmail)
   {
     console.log("user not loggedIn");
-  }
+  } 
   return (
     <div className="App">
       <Router>

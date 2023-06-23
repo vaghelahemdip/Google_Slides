@@ -11,9 +11,6 @@
 
 .logoutbtn {
    cursor: pointer;
-    float: right;
-  height: 2rem;
-  width: 5rem;
   position: relative;
   text-transform: uppercase;
   border:solid;

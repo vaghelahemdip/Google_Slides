@@ -2,3 +2,53 @@
     height: 609px;
     background-color: white;
 }
+.topLabel{
+    /* margin-right: 10px; */
+    background-color: rgb(184, 194, 194);
+    color: black;
+    height: 39px;
+    font-size: small;
+    border-radius: 5px;
+    border-color: aliceblue;
+    font-weight: bold;
+}
+.sc-qhd6ow-0 {
+    /* background-color: rgb(199, 191, 191); */
+    /* margin-left: 150px; */
+}
+.konvajs-content {
+    background-color:rgb(172, 168, 168) !important;
+}
+.cnt{
+    height: 550px;
+}
+.cnt .cpmImageList{
+    background-color: rgb(239, 232, 232);
+    height: 550px !important;
+    overflow: auto;
+    width: 150px !important;
+    margin: 10px;
+    border-radius: 30px;
+    /* overflow-y: hidden; */
+}
+.imageListItem img{
+    margin-top: 10px;
+    width: 80px !important;
+    height: 80px !important;
+}
+.sc-ugtqr7-1{
+    height: 530px !important;
+}
+
+.searchInput{
+    margin-top: 5px;
+    width: 120px !important;
+    border-radius: 30px;
+    border-color: transparent;
+}
+.addSlideButton{
+    border-radius: 10px;
+}
+.fa{
+    margin: 3px;
+}

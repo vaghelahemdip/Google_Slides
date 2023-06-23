@@ -11,6 +11,8 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "express": "^4.18.2",
+    "firebase": "^9.22.2",
+    "font-awesome": "^4.7.0",
     "formik": "^2.4.2",
     "react": "^18.2.0",
     "react-3d-icons": "^1.0.2",
